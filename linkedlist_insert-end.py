@@ -45,6 +45,9 @@ class LinkedList:
         new_node=Node(data)
         new_node.next=previous_node.next 
         previous_node.next=new_node
+
+
+       
 # Creating Linked List Object
 llist=LinkedList()
 
@@ -60,6 +63,5 @@ llist.prepend("E")
 # Insert Node after a Given Node
 llist.insert_after_node(llist.head.next, "J") #llist.head.next Specifies that we want to insert after B(head{A}.next{B})
 #//E-A-J-D-C-D
-
 
 llist.print_list()
